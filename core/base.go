@@ -21,6 +21,7 @@ type SSL struct {
 	SessionTicket bool     `json:"session_ticket"`
 	Curves        string   `json:"curves"`
 	Sni           string   `json:"sni"`
+	Fingerprint   string   `json:"fingerprint"`
 }
 
 // TCP 结构体

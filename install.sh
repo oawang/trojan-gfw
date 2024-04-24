@@ -9,11 +9,17 @@ remove=0
 
 update=0
 
-download_url="https://github.com/Jrohy/trojan/releases/download/"
+download_url="https://github.com/oawang/trojan-gfw/releases/download/"
 
-version_check="https://api.github.com/repos/Jrohy/trojan/releases/latest"
+version_check="https://api.github.com/repos/oawang/trojan-gfw/releases/latest"
 
-service_url="https://raw.githubusercontent.com/Jrohy/trojan/master/asset/trojan-web.service"
+service_url="https://raw.githubusercontent.com/oawang/trojan-gfw/master/asset/trojan-web.service"
+
+#download_url="https://github.com/Jrohy/trojan/releases/download/"
+#
+#version_check="https://api.github.com/repos/Jrohy/trojan/releases/latest"
+
+#service_url="https://raw.githubusercontent.com/Jrohy/trojan/master/asset/trojan-web.service"
 
 [[ -e /var/lib/trojan-manager ]] && update=1
 

@@ -21,7 +21,8 @@
     ],
     "reuse_session": true,
     "session_ticket": false,
-    "curves": ""
+    "curves": "",
+    "fingerprint": "Chrome"
   },
   "tcp": {
     "no_delay": true,
