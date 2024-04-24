@@ -2,12 +2,14 @@
 
 github_token=""
 
-project="Jrohy/trojan"
+#project="Jrohy/trojan"
+project="oawang/trojan-gfw"
 
 #获取当前的这个脚本所在绝对路径
 shell_path=$(cd `dirname $0`; pwd)
 
 function uploadfile() {
+  echo "上传文件："
 	file=$1
 	ctype=$(file -b --mime-type $file)
 
@@ -17,6 +19,7 @@ function uploadfile() {
 }
 
 function upload() {
+  echo "计算文件摘要："
 	file=$1
 	dgst=$1.dgst
 	openssl dgst -md5 $file | sed 's/([^)]*)//g' >> $dgst
